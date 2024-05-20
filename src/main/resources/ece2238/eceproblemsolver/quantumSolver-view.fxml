@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ece2238.eceproblemsolver.QuantumSolverController">
+   <children>
+      <TabPane layoutX="10.0" layoutY="58.0" prefHeight="326.0" prefWidth="581.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Input Values">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="467.0" style="-fx-background-color: #DDDDDD;">
+                     <children>
+                        <Label layoutX="224.0" layoutY="29.0" text="Enter Input Probabilities:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="74.0" text="| 00 &gt; :" />
+                        <Label layoutX="67.0" layoutY="119.0" text="| 01 &gt; :" />
+                        <Label layoutX="66.0" layoutY="165.0" text="| 10 &gt; :" />
+                        <Label layoutX="66.0" layoutY="215.0" text="| 11 &gt; :" />
+                        <TextField fx:id="zzReal" layoutX="130.0" layoutY="70.0" />
+                        <TextField fx:id="zzImaginary" layoutX="341.0" layoutY="69.0" />
+                        <TextField fx:id="zoReal" layoutX="131.0" layoutY="115.0" />
+                        <TextField fx:id="zoImaginary" layoutX="340.0" layoutY="115.0" />
+                        <TextField fx:id="ozReal" layoutX="130.0" layoutY="161.0" />
+                        <TextField fx:id="ozImaginary" layoutX="340.0" layoutY="160.0" />
+                        <TextField fx:id="ooReal" layoutX="130.0" layoutY="211.0" />
+                        <TextField fx:id="ooImaginary" layoutX="341.0" layoutY="211.0" />
+                        <Label layoutX="309.0" layoutY="73.0" text="+" />
+                        <Label layoutX="309.0" layoutY="120.0" text="+" />
+                        <Label layoutX="309.0" layoutY="164.0" text="+" />
+                        <Label layoutX="309.0" layoutY="215.0" text="+" />
+                        <Label layoutX="512.0" layoutY="75.0" text="i" />
+                        <Label layoutX="512.0" layoutY="119.0" text="i" />
+                        <Label layoutX="512.0" layoutY="166.0" text="i" />
+                        <Label layoutX="513.0" layoutY="216.0" prefWidth="4.0" text="i" />
+                        <Button layoutX="431.0" layoutY="255.0" mnemonicParsing="false" onAction="#saveInputs" prefHeight="26.0" prefWidth="54.0" text="Save" />
+                        <Button layoutX="506.0" layoutY="255.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="54.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Logic Gates">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #DDDDDD;">
+                     <children>
+                        <Label layoutX="240.0" layoutY="29.0" text="Enter Logic Gates:">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="13.0" layoutY="139.0" text="| input &gt; :" />
+                        <Label layoutX="94.0" layoutY="95.0" prefHeight="17.0" prefWidth="59.0" text="_______" />
+                        <Label layoutX="94.0" layoutY="172.0" prefHeight="17.0" prefWidth="55.0" text="_______" />
+                        <ChoiceBox fx:id="boxA1" layoutX="143.0" layoutY="89.0" prefHeight="38.0" prefWidth="62.0" />
+                        <ChoiceBox fx:id="boxB1" layoutX="252.0" layoutY="89.0" prefHeight="38.0" prefWidth="62.0" />
+                        <ChoiceBox fx:id="boxC1" layoutX="362.0" layoutY="89.0" prefHeight="38.0" prefWidth="62.0" />
+                        <ChoiceBox fx:id="boxA2" layoutX="141.0" layoutY="170.0" prefHeight="38.0" prefWidth="62.0" />
+                        <ChoiceBox fx:id="boxB2" layoutX="252.0" layoutY="170.0" prefHeight="38.0" prefWidth="62.0" />
+                        <ChoiceBox fx:id="boxC2" layoutX="363.0" layoutY="168.0" prefHeight="38.0" prefWidth="62.0" />
+                        <Label layoutX="503.0" layoutY="139.0" text="| output &gt; :" />
+                        <Label layoutX="204.0" layoutY="95.0" prefHeight="17.0" prefWidth="59.0" text="_______" />
+                        <Label layoutX="204.0" layoutY="172.0" prefHeight="17.0" prefWidth="55.0" text="_______" />
+                        <Label layoutX="313.0" layoutY="95.0" prefHeight="17.0" prefWidth="59.0" text="_______" />
+                        <Label layoutX="315.0" layoutY="172.0" prefHeight="17.0" prefWidth="55.0" text="_______" />
+                        <Label layoutX="424.0" layoutY="95.0" prefHeight="17.0" prefWidth="59.0" text="_______" />
+                        <Label layoutX="426.0" layoutY="172.0" prefHeight="17.0" prefWidth="55.0" text="_______" />
+                        <Button layoutX="431.0" layoutY="255.0" mnemonicParsing="false" onAction="#saveLogicGates" prefHeight="26.0" prefWidth="54.0" text="Save" />
+                        <Button layoutX="506.0" layoutY="255.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="54.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Output Values">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="467.0" style="-fx-background-color: #DDDDDD;">
+                     <children>
+                        <Label layoutX="66.0" layoutY="69.0" text="| 00 &gt; :" />
+                        <Label layoutX="67.0" layoutY="114.0" text="| 01 &gt; :" />
+                        <Label layoutX="66.0" layoutY="160.0" text="| 10 &gt; :" />
+                        <Label layoutX="66.0" layoutY="210.0" text="| 00 &gt; :" />
+                        <TextField fx:id="zzRealAns" alignment="CENTER" editable="false" layoutX="129.0" layoutY="65.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="zzImaginaryAns" alignment="CENTER" editable="false" layoutX="341.0" layoutY="64.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="zoRealAns" alignment="CENTER" editable="false" layoutX="129.0" layoutY="110.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="zoImaginaryAns" alignment="CENTER" editable="false" layoutX="340.0" layoutY="110.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="ozRealAns" alignment="CENTER" editable="false" layoutX="129.0" layoutY="156.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="ozImaginaryAns" alignment="CENTER" editable="false" layoutX="340.0" layoutY="155.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="ooRealAns" alignment="CENTER" editable="false" layoutX="129.0" layoutY="206.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <TextField fx:id="ooImaginaryAns" alignment="CENTER" editable="false" layoutX="341.0" layoutY="206.0">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></TextField>
+                        <Label layoutX="309.0" layoutY="68.0" text="+" />
+                        <Label layoutX="309.0" layoutY="115.0" text="+" />
+                        <Label layoutX="309.0" layoutY="159.0" text="+" />
+                        <Label layoutX="309.0" layoutY="210.0" text="+" />
+                        <Label layoutX="512.0" layoutY="70.0" text="i" />
+                        <Label layoutX="512.0" layoutY="114.0" text="i" />
+                        <Label layoutX="512.0" layoutY="161.0" text="i" />
+                        <Label layoutX="513.0" layoutY="211.0" prefWidth="4.0" text="i" />
+                        <Button layoutX="206.0" layoutY="23.0" mnemonicParsing="false" onAction="#generateOutputValues" prefHeight="26.0" prefWidth="166.0" text="Generate Output Values" />
+                        <Button layoutX="506.0" layoutY="255.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="54.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label alignment="CENTER" layoutX="3.0" layoutY="20.0" prefHeight="26.0" prefWidth="592.0" text="Quantum Circuit Solver" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

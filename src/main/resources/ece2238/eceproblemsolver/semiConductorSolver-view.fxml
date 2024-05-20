@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ece2238.eceproblemsolver.SemiConductorController">
+    <children>
+        <TextField fx:id="nameInput" layoutX="117.0" layoutY="46.0" />
+        <TextField fx:id="atomicNumberInput" layoutX="117.0" layoutY="90.0" />
+        <TextField fx:id="Ainput" layoutX="117.0" layoutY="135.0" />
+        <TextField fx:id="ZInput" layoutX="117.0" layoutY="174.0" />
+        <TextField fx:id="pmInput" layoutX="117.0" layoutY="216.0" />
+        <TextField fx:id="pInput" layoutX="117.0" layoutY="258.0" />
+        <TextField fx:id="radiusLengthsInput" layoutX="117.0" layoutY="305.0" />
+        <Label layoutX="26.0" layoutY="51.0" text="Name" />
+        <Label layoutX="26.0" layoutY="95.0" text="Atomic Number" />
+        <Label layoutX="26.0" layoutY="140.0" text="A" />
+        <Label layoutX="26.0" layoutY="179.0" text="Z" />
+        <Label layoutX="26.0" layoutY="221.0" text="pm" />
+        <Label layoutX="26.0" layoutY="263.0" text="p" />
+        <Label layoutX="28.0" layoutY="310.0" text="Radius lengths" />
+        <TextField fx:id="nDisplay" disable="true" layoutX="425.0" layoutY="47.0" />
+        <TextField fx:id="raDisplay" disable="true" layoutX="425.0" layoutY="91.0" />
+        <TextField fx:id="tDisplay" disable="true" layoutX="425.0" layoutY="136.0" />
+        <TextField fx:id="pDisplay" disable="true" layoutX="425.0" layoutY="175.0" />
+        <TextField fx:id="kfDisplay" disable="true" layoutX="425.0" layoutY="217.0" />
+        <TextField fx:id="efDisplay" disable="true" layoutX="425.0" layoutY="259.0" />
+        <TextField fx:id="vfDisplay" disable="true" layoutX="425.0" layoutY="306.0" />
+        <TextField fx:id="tfDisplay" disable="true" layoutX="425.0" layoutY="353.0" />
+        <Label layoutX="300.0" layoutY="51.0" text="n" />
+        <Label layoutX="300.0" layoutY="96.0" text="ra" />
+        <Label layoutX="300.0" layoutY="140.0" text="t" />
+        <Label layoutX="300.0" layoutY="180.0" text="p" />
+        <Label layoutX="300.0" layoutY="221.0" text="kf" />
+        <Label layoutX="300.0" layoutY="263.0" text="ef" />
+        <Label layoutX="300.0" layoutY="310.0" text="vf" />
+        <Label layoutX="300.0" layoutY="358.0" text="tf" />
+        <Button layoutX="163.0" layoutY="354.0" mnemonicParsing="false" onAction="#generateValues" text="Generate" />
+        <TextField fx:id="formulaInput" layoutX="118.0" layoutY="432.0" />
+        <TextField fx:id="egInput" layoutX="120.0" layoutY="466.0" />
+        <TextField fx:id="unInput" layoutX="117.0" layoutY="511.0" />
+        <TextField fx:id="upInput" layoutX="114.0" layoutY="552.0" />
+        <TextField fx:id="binput" layoutX="114.0" layoutY="598.0" />
+        <TextField fx:id="naInput" layoutX="116.0" layoutY="645.0" />
+        <TextField fx:id="ndInput" layoutX="120.0" layoutY="696.0" />
+        <Label layoutX="28.0" layoutY="437.0" text="Formula" />
+        <Label layoutX="29.0" layoutY="472.0" text="Eg" />
+        <Label layoutX="35.0" layoutY="516.0" text="un" />
+        <Label layoutX="35.0" layoutY="557.0" text="up" />
+        <Label layoutX="35.0" layoutY="603.0" text="B" />
+        <Label layoutX="35.0" layoutY="650.0" text="NA" />
+        <Label layoutX="35.0" layoutY="701.0" text="ND" />
+        <Button layoutX="168.0" layoutY="758.0" mnemonicParsing="false" onAction="#generateValues2" text="Generate" />
+        <TextField fx:id="niDisplay" disable="true" layoutX="425.0" layoutY="433.0" />
+        <TextField fx:id="piDisplay" disable="true" layoutX="425.0" layoutY="476.0" />
+        <TextField fx:id="v0Display" disable="true" layoutX="425.0" layoutY="521.0" />
+        <Label layoutX="296.0" layoutY="437.0" text="Ni" />
+        <Label layoutX="296.0" layoutY="472.0" text="Pi" />
+        <Label layoutX="296.0" layoutY="525.0" text="V0" />
+      <Button layoutX="519.0" layoutY="744.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="55.0" text="Exit" />
+    </children>
+</AnchorPane>
